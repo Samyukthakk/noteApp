@@ -1,0 +1,12 @@
+<div class="note-list">
+    <div  class="note" >
+        @for (item of notes; track $index) {
+            <h2>{{item.title}}</h2>
+             <p>{{item.content}}</p>
+           
+            <button (click)="editNote(item)">Edit Note</button>
+            <button (click)="deleteNote(item.id)">Delete Note</button>
+        }
+    
+</div>
+</div>

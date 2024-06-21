@@ -1,1 +1,6 @@
-<h1>welcome!!!</h1>
+<div class="app-container">
+  <h1>Note Taking App</h1>
+  <app-note-form [newvalue]="selectedNote"></app-note-form>
+  <hr>
+  <app-note-list (selectedNote)="fromchild($event)"></app-note-list>
+</div>
